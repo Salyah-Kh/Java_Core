@@ -1,0 +1,62 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+/*Упражнение 1
+Напишите консольную программу, в которой пользователь 
+с клавиатуры вводит два числа. А программа сранивает 
+два введенных числа и выводит на консоль результат 
+сравнения (два числа равны, первое число больше 
+второго или первое число меньше второго).*/
+
+
+
+
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+Scanner sc = new Scanner (System.in);
+System.out.print ("а: " );
+ int a = sc.nextInt();
+System.out.println();
+System.out.print ("b: " );
+int b = sc.nextInt();
+sc.close();
+//int i = 232;
+//число 232 в двоичной системе
+System.out.println(Integer.toBinaryString(a));
+//обратыный перевод из двоичной системы в десятичную
+//System.out.println(Integer.parseInt("11101000", 2));
+System.out.println(Integer.toBinaryString(b));
+System.out.println(a*b);
+
+if (a==b) {
+System.out.println("а=b");
+}
+else if (a<b) {
+   System.out.println("а<b");
+}
+else if (a>b) {
+   System.out.println("а>b");
+}
+else if (a>b) {
+   System.out.println("???");
+}
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
