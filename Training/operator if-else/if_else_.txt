@@ -1,0 +1,37 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+//Упражнение 2
+/*Напишите консольную программу, 
+в которой пользователь вводит с 
+клавиатуры число. Если число одновременно 
+меньше 9 и больше 2, то программа выводит 
+"Число больше 5 и меньше 10". Иначе программа
+выводит сообщение "Неизвестное число".*/
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+Scanner sc = new Scanner (System.in);
+System.out.print ("а: " );
+ int a = sc.nextInt();
+System.out.println();
+System.out.print ("b: " );
+int b = sc.nextInt();
+sc.close();
+
+
+if ((a<9) && (a>2)) {
+System.out.println("Число а больше 2 и меньше 10");
+}
+else {
+   System.out.println("Неизвестное число");
+}
+
+    }
+}
