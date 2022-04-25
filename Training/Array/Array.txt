@@ -1,0 +1,54 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+//источник задачи: http://kodesource.top/java-exercises/basic/index.php
+
+//83.Напишите программу на Java, чтобы умножить соответствующие элементы двух массивов целых чисел. Перейти к редактору
+//Пример вывода:
+
+//Array1: [1, 3, -5, 4]                                                  
+                                                                       
+//Array2: [1, 4, -5, -2]                                                 
+                                                                       
+//Результат: 1 12 25 -8 
+
+import java.util.Scanner;
+
+import java.util.Arrays;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    int [] a1 = { 1, 3, -5, 4 };
+	    int b1[]= new int [a1.length];
+        System.arraycopy(a1, 0, b1, 0, a1.length); // 1, 3, -5, 4
+        System.out.println("Array1:");
+        for(int i=0; i<b1.length; i++) System.out.print(b1[i]+"  ");
+        
+        
+        
+        int [] a2 = { 1, 4, -5, -2 };
+	    int b2[]= new int [a2.length];
+        System.arraycopy(a2, 0, b2, 0, a2.length); // 1, 4, -5, -2
+        System.out.println("\n \n Array2:");
+        for(int i=0; i<b2.length; i++) System.out.print(b2[i]+"  ");
+        System.out.println();
+        
+        
+	    System.out.println("Результат умножения массивов:");
+	
+	
+	    int [] a3 = {a1[0]*a2[0], a1[1]*a2[1], a1[2]*a2[2], a1[3]*a2[3],};
+	    int b3[]= new int [a1.length];
+        System.arraycopy(a3, 0, b3, 0, a3.length);
+        System.out.println("Array1:");
+        for(int i=0; i<b3.length; i++) System.out.print(b3[i]+"  ");
+	}
+	
+}
