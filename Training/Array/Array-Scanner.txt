@@ -1,0 +1,79 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+//источник задачи: http://kodesource.top/java-exercises/basic/index.php
+
+//83.Напишите программу на Java, чтобы умножить соответствующие элементы двух массивов целых чисел. Перейти к редактору
+//Пример вывода:
+
+//Array1: [1, 3, -5, 4]                                                  
+                                                                       
+//Array2: [1, 4, -5, -2]                                                 
+                                                                       
+//Результат: 1 12 25 -8 
+
+import java.util.Scanner;
+
+import java.util.Arrays;
+
+public class Main
+{
+	public static void main(String[] args) {
+    Scanner input = new Scanner(System.in); // Объявляем Scanner
+    //System.out.println("ВВедите : ");
+    //int size = input.nextInt(); // Читаем с клавиатуры размер массива и записываем в size
+    int a1[] = new int[4]; // Создаём массив int размером в size
+    System.out.println("Введите 4 элемента Array1:");
+    /*Пройдёмся по всему массиву, заполняя его*/
+    for (int i = 0; i < 4; i++) {
+        a1[i] = input.nextInt(); // Заполняем массив элементами, введёнными с клавиатуры
+    }
+    System.out.println ("Array1:");
+    for (int i = 0; i < 4; i++) {
+        System.out.println (" " + a1[i]); // Выводим на экран, полученный массив
+    }
+    System.out.println();
+    
+    
+    
+    int a2[] = new int[4]; // Создаём массив int размером в size
+    System.out.println("Введите 4 элемента Array2:");
+    /*Пройдёмся по всему массиву, заполняя его*/
+    for (int i = 0; i < 4; i++) {
+        a2[i] = input.nextInt(); // Заполняем массив элементами, введёнными с клавиатуры
+    }
+    System.out.println ("Array2:");
+    for (int i = 0; i < 4; i++) {
+        System.out.println (" " + a2[i]); // Выводим на экран, полученный массив
+    }
+    System.out.println();
+    
+    
+    
+    
+    
+
+        /*int [] a2 = { 1, 4, -5, -2 };
+	    int b2[]= new int [a2.length];
+        System.arraycopy(a2, 0, b2, 0, a2.length); // 1, 4, -5, -2
+        System.out.println("\n \nArray2:");
+        for(int i=0; i<b2.length; i++) System.out.print(b2[i]+"  ");
+        System.out.println();*/
+        
+        
+	    System.out.println("Результат умножения массивов:");
+	
+	
+	    int [] a3 = {a1[0]*a2[0], a1[1]*a2[1], a1[2]*a2[2], a1[3]*a2[3],};
+	    int b3[]= new int [a1.length];
+        System.arraycopy(a3, 0, b3, 0, a3.length);
+        //System.out.println("Array1:");
+        for(int i=0; i<b3.length; i++) System.out.print(b3[i]+"  ");
+	}
+	
+}
