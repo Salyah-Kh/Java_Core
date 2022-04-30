@@ -1,0 +1,39 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+/*Напишите программу на Java для создания новой строки, 
+в которой первые три символа взяты из данной строки. 
+Если длина данной строки меньше 3, используйте «#» в 
+качестве заменяющих символов.
+Тестовые данные: Str1 = ""*/
+
+/*http://proglang.su/java/strings-length*/
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+ Scanner sc = new Scanner (System.in);
+System.out.print ("Введите строку: " );
+String str = sc.next();
+System.out.println();
+///System.out.println("Ваша строка: " + str);
+//char c = str.charAt(3);
+//System.out.println(c); 
+int len = str.length();
+sc.close();
+if (len <=3)  
+System.out.println("Ваша строка: ### ");
+else 
+System.out.println("Ваша строка: " + str);
+}
+
+
+	}
+
