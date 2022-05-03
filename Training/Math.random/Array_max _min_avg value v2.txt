@@ -1,0 +1,60 @@
+/*
+1.0. Максимальное, минимальное и среднее значение
+Задача:
+Заполните массив случайным числами и выведите максимальное, минимальное и среднее значение.
+Для генерации случайного числа используйте метод Math.random(), 
+который возвращает значение в промежутке [0, 1].
+*/
+
+
+import java.util.OptionalInt;
+import java.util.stream.IntStream;
+import java.util.Arrays;
+
+public class Main
+{
+	public static void main(String[] args) {
+		double[] array = new double[5];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = Math.random();
+           System.out.println (" " + array[i]); // Выводим на экран, полученный массив
+    }
+    System.out.println();
+    
+    
+    //максимальное значение maxNum(использование итератора)
+    double maxNum = array[0];
+        for (double i : array) {
+            if (i > maxNum)
+                maxNum = i;
+        }
+        System.out.println("Maximum number = " + maxNum);
+    
+    
+    //минимальное значение mimNum (спользование Arrays.sort, если убрать комментарии)
+    
+    
+        /*Arrays.sort(array);
+        System.out.println("intArray after sorting: " + Arrays.toString(array));*/
+        
+        
+        double mainNum = array[0];
+        System.out.println("Minimum number = " + mainNum);
+        
+      
+    //среднее значение AvgNum
+    double average = 0;
+if (array.length > 0)
+{
+    double sum = 0;
+    for (int i = 0; i < array.length; i++) {
+         sum += array[i];
+    }
+    average = sum / array.length;
+     System.out.println("Avg number = " + average);
+        }
+        
+        
+        
+	}
+}
