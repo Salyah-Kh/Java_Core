@@ -1,0 +1,139 @@
+/* написать простейшую нейросеть Вася. Вася уже умеет здороваться, отвечать на базовые вопросы.
+
+Список слов и вопросов на которые Вы сможете получить ответы:
+Привет!
+Как тебя зовут?
+Как дела?
+Сколько тебе лет?
+Ты искусственный интеллект?
+Ты умеешь считать?
+Посчитай до 10
+Ты знаешь алфавит?
+Назовите сколько букв в русском алфавите?
+Ты знаешь английский?
+Ты знаешь иностранные языки?
+Твое пожелание человечеству?
+
+*/
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+/* написать простейшую нейросеть Вася. Вася уже умеет здороваться, отвечать на базовые вопросы.
+
+Список слов и вопросов на которые Вы сможете получить ответы:
+Привет!
+Как тебя зовут?
+Как дела?
+Сколько тебе лет?
+Ты искусственный интеллект?
+Ты умеешь считать?
+Посчитай до 10
+Ты знаешь алфавит?
+Назовите сколько букв в русском алфавите?
+Ты знаешь английский?
+Ты знаешь иностранные языки?
+Твое пожелание человечеству?
+
+*/
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+ Scanner sc = new Scanner (System.in);
+System.out.print ("Ваш вопрос к Васе: " );
+String str = sc.next();
+System.out.println();
+///System.out.println("Ваша строка: " + str);
+//char c = str.charAt(3);
+//System.out.println(c); 
+//int len= str.length();
+//str You = str.str;
+sc.close();
+String s;
+s = "Привет";
+if (str == s)  
+{
+System.out.print(s);
+System.out.println("Вася: " + str);
+}
+
+else if (str != s)
+{
+System.out.println("Я не понимаю выражение: " + str);
+System.out.println("Уточните Ваш вопрос");
+}
+
+
+
+}
+
+
+	}
+
+
+
+/*
+
+
+
+import java.util.Scanner;
+
+
+public class Main
+{
+    public static void main(String[] args) {
+Scanner sc = new Scanner (System.in);
+System.out.print ("Введите целое число а: " );
+int a = sc.nextInt();
+System.out.println();
+
+
+System.out.print ("Введите целое число b: " );
+int b = sc.nextInt();
+
+
+System.out.print ("Введите номер операции, где 1 это сложение, 2-вычитание, 3-умножение: " );
+int d = sc.nextInt();
+
+
+sc.close();
+
+
+int w = d;
+int r;
+
+        switch (d) {
+            case 1:
+                
+                System.out.println("Сложение а и b:");
+                r = a+b;
+                System.out.println(r);
+                break;
+                 
+            case 2:
+                System.out.println("Вычитание а и b:");
+                r = a-b;
+                System.out.println(r);
+                break;
+                
+            case 3:
+                System.out.println("Умножение а и b:");
+                r = a*b;
+                System.out.println(r);
+                break;
+          
+            default:
+                System.out.println("Нет операции с веденным номером");
+                break;
+             }
+    }  
+}
+
+*/
+
