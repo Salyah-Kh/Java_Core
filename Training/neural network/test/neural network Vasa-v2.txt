@@ -1,0 +1,87 @@
+/******************************************************************************
+ Online Java Compiler.
+ Code, Compile, Run and Debug java program online.
+ Write your code in this editor and press "Run" button to execute it.
+
+ *******************************************************************************
+ написать простейшую нейросеть Вася. Вася уже умеет здороваться, отвечать на базовые вопросы.
+
+ Список слов и вопросов на которые Вы сможете получить ответы:
+ Привет!
+ Как тебя зовут?
+ Как дела?
+ Сколько тебе лет?
+ Ты искусственный интеллект?
+ Ты умеешь считать?
+ Посчитай до 10
+ Ты знаешь алфавит?
+ Назовите сколько букв в русском алфавите?
+ Ты знаешь английский?
+ Ты знаешь иностранные языки?
+ Твое пожелание человечеству?
+ */
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ваш вопрос к Васе: ");
+        String str = sc.next();
+        System.out.println();
+        //sc.close();
+
+        String str1 = str;
+        String str2 = "Привет";
+        String str3 = "Как тебя зовут";
+        // возвращается true, ведь обе строки равны без учёта регистра
+
+        if (str1.equalsIgnoreCase(str2)) {
+            System.out.println("Вася: Привет!)");
+        } else {
+            System.out.println("Я вас не понимаю. Повторите вопрос");
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        str = sc.nextLine();
+        System.out.print("Ваш вопрос к Васе: ");
+        System.out.println();
+
+        // возвращается true, ведь обе строки равны без учёта регистра
+
+        if (str1.equalsIgnoreCase(str3)) {
+            System.out.println("Вася: Привет!)");
+        } else {
+            System.out.println("Я вас не понимаю. Повторите вопрос");
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+}

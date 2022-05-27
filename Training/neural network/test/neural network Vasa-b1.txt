@@ -1,0 +1,50 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+        System.out.print("Ваш вопрос к Васе: ");
+        String str = sc.next();
+        System.out.println();
+        sc.close();
+        //строка для поиска
+        String searchMe = str;
+        //количество символов в строке
+        int max = searchMe.length();
+        //символ, который нужно найти в строке
+        char symb = 'т';
+        //переключатель найдено/не найдено
+        boolean find = false;
+
+        for (int i = 0; i < max; i++) {
+            // если символ на позиции i в строке равен искомому символу
+            if (searchMe.charAt(i) == symb) {
+                //переключаемся в режим "найдено" и выходим из цикла
+                find = true;
+                break;
+            }
+
+        }
+
+        //выводим соответствующее сообщение: найден или не найден символ
+        if (find)
+            System.out.println("Привет!");
+        else
+            System.out.println("Повторите вопрос. Я вас не понял");
+
+    }
+    
+    
+    
+    
+    
+    
+    
+}
