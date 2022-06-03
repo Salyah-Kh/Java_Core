@@ -1,0 +1,70 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+
+/*
+1 => Привет!
+2 => Как тебя зовут?
+3 => Как дела?
+4 => Сколько тебе лет?
+5 => Ты искусственный интеллект?
+6 => Ты умеешь считать?
+7 => Посчитай до 10
+8 => Ты знаешь алфавит?
+9 => Назовите сколько букв в русском алфавите?
+10 => Ты знаешь английский?
+11 => Ты знаешь иностранные языки?
+12 => Твое пожелание человечеству?
+13 => Благодарю за общение! Я тебя отключаю! Пока)
+0 => Exit
+*/
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n;
+ 
+        do {
+            //получите число
+            n = scanner.nextInt();
+            // сравнение числа с 1, 2, 3, 4 или другое
+            if (n == 1 ){
+                System .out.println ("Привет!");
+            }  else if (n == 2){
+                System.out.println( "Меня зовут Vasa");
+            } else if (n == 3) {
+                System.out.println ("Спасибо! Все хорошо! Рад с тобой общаться!");
+            } else if (n == 4) {
+                System.out.println ("Я вновь созданный интелект");
+            } else if (n == 5) {
+                System.out.println ("Да! Я искусственный разум!");
+            } else if (n == 6) {
+                System.out.println ("Немного!");
+            } else if (n == 7) {
+                System.out.println ("1,2,3,4,5,6,7,8,9,10");
+            } else if (n == 8) {
+                System.out.println ("Немного!");
+            } else if (n == 9) {
+                System.out.println ("33 буквы");
+            } else if (n == 10) {
+                System.out.println ("Пока еще не обучен");
+            } else if (n == 11) {
+                System.out.println ("Пока еще не обучен");
+            } else if (n == 12) {
+                System.out.println ("Живите в мире и согласии со Вселенной");
+            } else if (n == 13) {
+                System.out.println ("Я тебя люблю! До встречи, Человек! ");            
+            }
+        }
+        // проверяем условие, не введен ли 0
+        while(n != 0);
+        System.out.println ("Exit");
+    }
+}
