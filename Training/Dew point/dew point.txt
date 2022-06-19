@@ -1,0 +1,33 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+import java.util.Scanner;
+ 
+public class Main {
+   
+    public static void main(String[] args) {
+           
+        Scanner in = new Scanner(System.in);
+        System.out.println("Input temperature (T) room,°C: ");
+        float t = in.nextFloat();
+        System.out.println("Input humidity (RH) room,%: ");
+        float rh = in.nextFloat();
+        System.out.println("Input dew point (Tp) room,°C: ???");
+        double f,u,y,g,s,Tp;
+        double a = 17.27;
+        double b = 237.7;
+        u = a * t;
+        y = b + t;
+        g = rh / 100;
+        s = Math.log(g);
+        f = u / y+s;
+        Tp=(b*f)/(a-f);
+        System.out.printf("\nSystem info:\ng(T,RH): %.8f\ns(RH): %.8f\nf(RH): %.8f\n\nResult:\nT at the room,°C: %.8f\nRH at the room: %.8s\nTp at the room,°C: %.8f\n", t, rh, s, g, f, Tp);
+        in.close();
+    }
+}
