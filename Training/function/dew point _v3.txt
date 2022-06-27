@@ -1,0 +1,40 @@
+public class Main {
+
+    	public static double function1(double argT){  
+        double T = argT;  
+        return T; 
+        
+    }
+
+public static double function2(double argRH){  
+        double RH = argRH;  
+        return RH; 
+        
+    }
+
+ 	public static void function3(){          
+	System.out.println("Результат расчетов:");  
+    }
+
+       public static void main(String[] args) {  
+       function3(); 
+
+       double T = 20.65;
+       double t= T;
+       double RH = 40.65;
+       double rh= RH;
+
+	double f,u,y,g,s,Tp;
+        double a = 17.27;
+        double b = 237.7;
+        u = a * t;
+        y = b + t;
+        g = rh / 100;
+        s = Math.log(g);
+        f = u / y+s;
+        Tp=(b*f)/(a-f);
+         System.out.printf("\nSystem info:\ng(T,RH): %.8f\ns(RH): %.8f\nf(RH): %.8f\n\nResult:\nT at the room,°C: %.8f\nRH at the room: %.8s\nTp at the room,°C: %.8f\n", t, rh, s, g, f, Tp);
+
+        
+    }
+}
